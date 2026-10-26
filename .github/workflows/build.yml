@@ -22,12 +22,15 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Geode CLI
-        uses: geode-sdk/build-geode-mod/setup@main
-
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
           combine: true
           target: ${{ matrix.config.target }}
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: geode-mod-${{ matrix.config.name }}
+          path: build/*.geode
           
