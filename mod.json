@@ -1,0 +1,15 @@
+{
+    "geode": "3.0.0",
+    "id": "g16934997.mega_difficulties",
+    "version": "1.0.0",
+    "name": "Mega Difficulties Filter",
+    "developer": "g16934997",
+    "description": "Добавляет кастомный фильтр сложностей из концепт-видео.",
+    "dependencies": [
+        {
+            "id": "geode.loader",
+            "version": "v3.0.0",
+            "importance": "required"
+        }
+    ]
+}
